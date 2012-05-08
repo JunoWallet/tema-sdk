@@ -11,8 +11,6 @@
           	// AppleAppId example: 314477780
             	[JunoTaskController trackPayPerEngagement:AppStoreAppId];
 
-		// or can specify event names to track
-		[JunoTaskController trackPayPerEngagement:AppStoreAppId withEvent:@"testEvt"];
       }
 
 3. Register the application as advertiser in the Flurry account
