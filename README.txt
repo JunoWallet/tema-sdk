@@ -1,8 +1,5 @@
-
 TEMA SDK
 
 1. TEMA-SDK-iOS
 
 2. TEMA-SDK-Android
-
-
