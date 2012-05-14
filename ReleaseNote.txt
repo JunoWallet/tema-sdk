@@ -1,9 +1,0 @@
-Rev 1.2.0
-- removed iOS UDID
-- added SHA1-MAC based AltUDID (InstallNotify V2)
-
-Rev 1.1.0
-- added general events notification (other than install)
-
-Rev 1.0.4
-- 1st release
