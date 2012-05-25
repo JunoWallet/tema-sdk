@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tema-sdk by JunoWallet</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Tema-sdk</h1>
+        <p>The JunoWallet TEMA SDK</p>
+        <p class="view"><a href="https://github.com/JunoWallet/tema-sdk">View the Project on GitHub <small>JunoWallet/tema-sdk</small></a></p>
+        <ul>
+          <li><a href="https://github.com/JunoWallet/tema-sdk/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/JunoWallet/tema-sdk/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/JunoWallet/tema-sdk">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>TEMA SDK</h1>
+
+<h2>iPhone (TEMA-SDK-iOS)</h2>
+
+<ol>
+<li><p>Create a user account at Flurry: <a href="http://www.flurry.com/dev/signup.html">http://www.flurry.com/dev/signup.html</a></p></li>
+<li>
+<p>integrate TEMA SDK</p>
+
+<ul>
+<li>Unzip and drag the TEMA-SDK directory into your project's Xcode window, select "Copy items into destination group's folder" and "Create groups for any added folders"</li>
+<li>
+<p>In your Application Delegate:</p>
+
+<pre><code>#import "JunoTaskController.h"
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+    // AppleAppId example: 314477780
+    [JunoTaskController trackPayPerEngagement:AppStoreAppId];
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>Register the application as advertiser in the Flurry account</p></li>
+<li><p>Test and activate the campaign.</p></li>
+</ol><p><br></p>
+
+<h2>Android (TEMA-SDK-Android)</h2>
+
+<ol>
+<li><p>Create a user account at Flurry: <a href="http://www.flurry.com/dev/signup.html">http://www.flurry.com/dev/signup.html</a></p></li>
+<li>
+<p>Integrate TEMA SDK</p>
+
+<ul>
+<li>Include the JunoTaskController.jar into your project's java build path (Projects&gt; Properties&gt; Java Build Path&gt; Add External JARs)</li>
+<li>
+<p>In your Application Activity:</p>
+
+<pre><code>import android.content.Context;
+import com.junobe.android.tema.JunoTaskController;
+
+public class Foo extends Activity {
+    public void onCreate(Bundle icicle) {
+        ...
+        // 1. initialization
+        JunoTaskController.init((Context)this);
+
+        // 2.1 call trackPayPerEngagement with app id.
+        String applicationId = "12345678";  // example application id
+        JunoTaskController.trackPayPerEngagement(applicationId);
+
+        // 2.2 alternatively, specify event names to track
+        JunoTaskController.trackPayPerEngagement(applicationId, "testEvt");
+        ...
+    }
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>Register the application as advertiser in the Flurry account.</p></li>
+<li><p>Test and activate the campaign.</p></li>
+</ol>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/JunoWallet">JunoWallet</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-32144819-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
