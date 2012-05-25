@@ -1,6 +1,6 @@
-TEMA SDK
+#TEMA SDK
 
-[1] iPhone (TEMA-SDK-iOS)
+## iPhone (TEMA-SDK-iOS)
 
 	1. Create a user account at Flurry http://www.flurry.com/dev/signup.html 
 
@@ -22,7 +22,7 @@ TEMA SDK
 	4. Test and activate the campaign.
 
 
-[2] Android (TEMA-SDK-Android)
+## Android (TEMA-SDK-Android)
 
 	1. Create a user account at Flurry http://www.flurry.com/dev/signup.html 
 
