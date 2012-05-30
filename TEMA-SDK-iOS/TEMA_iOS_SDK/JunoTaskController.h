@@ -11,6 +11,7 @@
     //
 }
 
++(void) trackPayPerEngagement;
 +(void) trackPayPerEngagement:(NSString*)advKey;
 +(void) trackPayPerEngagement:(NSString*)advKey withEvent:(NSString*)evtName;
 +(void) trackPayPerEngagement:(NSString*)advKey withMx:(int)mm;

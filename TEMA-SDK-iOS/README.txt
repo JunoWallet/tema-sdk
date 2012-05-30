@@ -7,10 +7,9 @@
    b. In your Application Delegate:
       #import "JunoTaskController.h"
       - (void)applicationDidFinishLaunching:(UIApplication *)application {
-
-          	// AppleAppId example: 314477780
-            	[JunoTaskController trackPayPerEngagement:AppStoreAppId];
-
+		...
+            	[JunoTaskController trackPayPerEngagement];
+		...
       }
 
 3. Register the application as advertiser in the Flurry account

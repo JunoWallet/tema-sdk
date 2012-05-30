@@ -10,8 +10,9 @@
 
 		#import "JunoTaskController.h"
 		- (void)applicationDidFinishLaunching:(UIApplication *)application {
-			// AppleAppId example: 314477780
-			[JunoTaskController trackPayPerEngagement:AppStoreAppId];
+			...
+			[JunoTaskController trackPayPerEngagement];
+			...
 		}
 
 3. Register the application as advertiser in the Flurry account
@@ -36,12 +37,8 @@
 				// 1. initialization
 				JunoTaskController.init((Context)this);
 
-				// 2.1 call trackPayPerEngagement with app id.
-				String applicationId = "12345678";  // example application id
-				JunoTaskController.trackPayPerEngagement(applicationId);
-
-				// 2.2 alternatively, specify event names to track
-				JunoTaskController.trackPayPerEngagement(applicationId, "testEvt");
+				// 2 call trackPayPerEngagement.
+				JunoTaskController.trackPayPerEngagement();
 				...
 			}
 		}

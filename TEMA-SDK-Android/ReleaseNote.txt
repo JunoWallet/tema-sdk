@@ -1,2 +1,6 @@
+Rev 1.4.0
+  - fixed error in MAC-SHA1
+  - removed appId
+
 Rev 1.2.0
   - first release

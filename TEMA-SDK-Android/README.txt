@@ -16,13 +16,10 @@
           // 1. initialization
           JunoTaskController.init((Context)this);
 
-          // 2.1 call trackPayPerEngagement with app id.
-          String applicationId = "12345678";  // example application id
-          JunoTaskController.trackPayPerEngagement(applicationId);
+          // 2 call trackPayPerEngagement
+          JunoTaskController.trackPayPerEngagement();
 
-          // 2.2 alternatively, specify event names to track
-          JunoTaskController.trackPayPerEngagement(applicationId, "testEvt");
-          ...
+	  ...
         }
       }
 
